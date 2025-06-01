@@ -17,9 +17,9 @@ html {
 }
 
 body{
-    font-family: "playfair", serif;
-   
-
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal
 }
 
 
@@ -137,6 +137,7 @@ header {
 }
 
 /* Thêm vào cuối file */
+/* laptop screen */
 @media (min-width: 62em) {
     
     
@@ -193,7 +194,7 @@ header {
     background-color: var(--beige-br);
 }
 
-/* main */
+/* ===index.html/main=== */
 
 
 .hero {
@@ -202,7 +203,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     margin-left: 10%;
 }
@@ -213,12 +214,41 @@ header {
     color: var(--dark-navy);
 }
 
+.hero__mail {
+    font-size: 2.5rem;
+    font-weight: bold;
+    align-items: center;
+    color: var(--dark-navy);
+    margin-top: 1rem;
+}
+.hero__mail :hover {
+    color: var(--beige-br);
+    transition: var(--smooth);
+}
+
 .hero__sub {
     font-size: 2rem;
     font-weight: bold;
     color: var(--dark-navy);
     opacity: 0.5;
 }
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.hero__animation {
+    width: 220px;
+    min-width: 120px;
+    height: 220px;
+    flex-shrink: 1;
+    
+}
+.hero__content {
+    flex: 1;
+}
+
 
 
 .container {
@@ -299,6 +329,34 @@ p {
      color: var(--dark-navy);
     
 }
+/* phần contact */
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+}
+.contact ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contact li {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    
+}
+.contact li :hover {
+    color: var(--beige-br);
+    transition: var(--smooth);
+}
+
+/* laptop screen */
+
 
 @media (min-width: 62em) {
   .container {
@@ -314,6 +372,39 @@ p {
   main {
     padding-top: 2rem;
   }
-
-  
+  .hero {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 4rem 0;
+  }
+  .contact a {
+    list-style-type: none;
+  }
+  .hero__main {
+    font-size: 3.5rem;
+    font-weight: bold;
+    align-items: center;
+    color: var(--dark-navy);
+    padding-bottom: .5rem;
 }
+ .hero__sub {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark-navy);
+    opacity: 0.5;
+    align-items: center;
+    text-align: center;
+}
+.hero__animation {
+        margin-bottom: .1rem;
+        margin-top: .001rem;
+    }
+
+}
+  
+
+/* ===project.html/main=== */
+
