@@ -1,3 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--beige);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+
+:root {
+    --beige: #ccccba;
+    --beige-br: rgb(221, 168, 83);
+    --navy: #27548A;
+    --dark-navy:rgb(24, 59, 78);
+    --smooth:all .3s ease-in; 
+    
+}
+
 /* ===blog.html===*/
 .blog__animation {
     width: 220px;
