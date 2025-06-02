@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/project.css">
      <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
 </head>
 <body>
@@ -35,29 +36,38 @@
     </header>
 
     <main>
-        <section class="projects">
-            <h1>My projects are below </h1>
-
-            <ul>
-                <li>
-                    <h2>Create Personal CV</h2>
-                    <p>Create Personal CV by using HTML structure</p>
-                </li>
-                <li>
-                    <h2>Basic HTML Website</h2>
-                    <p>A simple HTML website project to practice basic HTML skills</p>
-                </li>
-                <li>
-                    <h2>Personal Porfolio</h2>
-                    <p>Use the Basic HTML Website to CSS and make it fit with many screen size.</p>
-                </li>
-                <li>
-                    <h2>Personal Porfolio-2</h2>
-                    <p>I do it for fun.</p>
-                </li>
-            </ul>
-            
-        </section>
+        <div id="lottie-project" class="project__animation"></div>
+        <div class="projects">
+        <h1>My projects are below</h1>
+        <p>Here are some of the projects I have worked on. <br>
+             You can click on the project names to view them on GitHub.</p>
+        <table class="projects__table">
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://github.com/trungthanh01/Project-learning">Create Personal CV</a></td>
+                    <td>Create Personal CV by using HTML structure</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/trungthanh01/Basic-HTML-Website">Basic HTML Website</a></td>
+                    <td>A simple HTML website project to practice basic HTML skills</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/trungthanh01/Personal-Portfolio">Personal Portfolio</a></td>
+                    <td>Use the Basic HTML Website to CSS and make it fit with many screen size.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/trungthanh01/Personal-Portfolio-2">Personal Portfolio-2</a></td>
+                    <td>I do it for fun.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
         
     </main>
     <div class="contact">
@@ -86,19 +96,18 @@
         </ul>
     </div>
     <footer>
-        <p>&copy; 2025 Marcus</p>
+        <p>&copy; This website is human made</p>
     </footer>
     <script src="js\main.js"></script>
     <script src="https://kit.fontawesome.com/1d4daf29d4.js" crossorigin="anonymous"></script>
     <script>
-    // lottie-project
   document.addEventListener("DOMContentLoaded", function() {
     lottie.loadAnimation({
       container: document.getElementById('lottie-project'),
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'package\Animation - 1748787295931.json'
+      path: 'package/Animation - 1748787295931.json' // Đảm bảo đường dẫn đúng
     });
   });
 </script>
