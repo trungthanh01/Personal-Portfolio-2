@@ -11,9 +11,6 @@ html {
     scroll-behavior: smooth;
     background-color: var(--beige);
     
-    
-    
-
 }
 
 body{
@@ -406,38 +403,3 @@ p {
 }
   
 
-/* ===project.html/main=== */
-.project__animation {
-    width: 220px;
-    height: 220px;
-    margin: 2rem auto 1rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects__table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-    background: var(--beige);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-.projects__table th, .projects__table td {
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
-    text-align: left;
-}
-
-.projects__table th {
-    background: var(--beige-br);
-    color: var(--dark-navy);
-    font-size: 1.1rem;
-}
-
-.projects__table tr:last-child td {
-    border-bottom: none;
-}
