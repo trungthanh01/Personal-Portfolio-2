@@ -17,6 +17,7 @@ body{
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.2rem;
 }
 
 
@@ -103,6 +104,7 @@ main {
         align-content: center;
         flex-direction: column;
         margin: 2rem auto;
+        font-size: 1.2rem;
         
     }
     .projects__table th, .projects__table td {
