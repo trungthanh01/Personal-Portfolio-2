@@ -10,14 +10,14 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--beige);
-    margin-left: 10px;
-    margin-right: 10px;
+    
 }
 
 body{
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    
 }
 
 
@@ -31,6 +31,10 @@ body{
 }
 
 /* ===project.html=== */
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .project__animation {
     width: 220px;
     height: 220px;
