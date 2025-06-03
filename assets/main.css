@@ -411,6 +411,8 @@ p {
     flex-direction: column;
     justify-content: space-between;
     text-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
     
 }
 .about__me {
