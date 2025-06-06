@@ -17,8 +17,9 @@
   <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
 </head>
     
-</head>
+
 <body>
+    
     <section id="overlay"></section>
     <!-- header -->
     <header>
@@ -29,11 +30,18 @@
                 <!-- banner__menu__lists -->
                 <ul class="banner__menu__lists">
                         <li class="banner__menu__list">
-                            <a href="index.html">Home</a></li>
+                            <a href="#hero">Home</a></li>
                         <li class="banner__menu__list">
-                            <a href="project.html">Projects</a></li>
+                            <a href="#about">About</a></li>
                         <li class="banner__menu__list">
-                            <a href="blog.html">Blog</a></li>
+                            <a href="#work">Work</a></li>
+                        <li class="banner__menu__list">
+                            <a href="#project">Project</a></li>
+                        <li class="banner__menu__list">
+                            <a href="#blog">Blog</a></li>
+                        <li class="banner__menu__list">
+                            <a href="#connect">Connect</a></li>
+                        
                 </ul>
             </nav>
             <!-- menu button -->
@@ -48,7 +56,7 @@
 
     <main>
 
-        <div class="hero">
+        <div id="hero" class="hero">
             <div id="lottie-hero" class="hero__animation"></div>
             <div class="hero__content">
                 <h1 class="hero__main">Hi there, I'm Marcus</h1>
@@ -60,12 +68,13 @@
                 aria-label="mailto">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
+                
                 </ul>
             </div>
         </div>
 
-       
-        <div class="about">
+       <!-- about -->
+        <div id="about" class="about">
             <h2 class="about__me">About Me</h2>
             <p>Hi, I'm Marcus, a passionate frontend developer with a love for creating beautiful and functional web applications.
             Beside that, I have a keen interest in cryptocurrency, AI and reading book. I enjoy exploring new technologies and continuously improving my skills.
@@ -81,35 +90,147 @@
             Just keep going bro!!
             </p>
         </div>
-       <div class="container">
+        <!-- work experience -->
+       <div id="work">
             <div class="work_edu">
+
                 <div class="work__experience">
-                    <h2 class="work__experience__title">Work Experience</h2>
-                    <article class="work__experience__item">
-                        <h3>1. roadmap.sh</h3>
-                        <p>I'm currenly solving projects on Roadmap.sh</p>
-                        <a href="https://roadmap.sh/u/marcusvn" target="_blank">Visit my roadmap.sh profile</a>
-                        <a href="https://github.com/trungthanh01" target="_blank">Visit my github</a>
-                    </article>
-                    <article class="work__experience__item">
-                        <h3>2. Guest Experience Expert</h3>
-                        <p>I'm working as a Guest Experience Expert in Renaissance Hotel.</p>
-                        <a href="https://www.linkedin.com/in/trung-th%C3%A0nh-l%C3%AA-8460bb35b/" target="_blank">Visit my linkedin</a>
-                    </article>
+                    
+                    <div class="work__experience__items">
+                        <h2 class="work__experience__title">Work Experience</h2>
+                        <article class="work__experience__item">
+                            <h3>1. roadmap.sh</h3>
+                            <p>I'm currenly solving projects on Roadmap.sh</p>
+                            <a href="https://roadmap.sh/u/marcusvn" target="_blank">Visit my roadmap.sh profile</a>
+                            <a href="https://github.com/trungthanh01" target="_blank">Visit my github</a>
+                        </article>
+
+                        <article class="work__experience__item">
+                            <h3>2. Guest Experience Expert</h3>
+                            <p>I'm working as a Guest Experience Expert in Renaissance Hotel.</p>
+                            <a href="https://www.linkedin.com/in/trung-th%C3%A0nh-l%C3%AA-8460bb35b/" target="_blank">Visit my linkedin</a>
+                        </article>
+                    </div>
+                    <div id="lottie-work" class="work-animation"></div>
                 </div>
+
                 <div class="education">
-                    <h2 class="education__title">Education</h2>
-                    <article class="education__item">
+                    
+                    <div class="education__items">
+                        <h2 class="education__title">Education</h2>
+                        <article class="education__item">
                         <h3><a href="https://huflit.edu.vn/" target="_blank">Hochiminh University of Foreign Languages Information Technology (HUFLIT)</a></h3>
                         <p>I graduated from Hotel and Restaurant Management.</p>
-                    </article>
+                        </article>
+                    </div>
+
+                    <div id="lottie-edu" class="edu-animation"></div>
+
                 </div>
             </div>
         </div>
+        <!-- project -->
+        <div id="project" class="projects">
+            <h1>My projects are below</h1>
+            <p>Here are some of the projects I have worked on. <br>
+                You can click on the project names to view them on GitHub.</p>
+            <table class="projects__table">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://github.com/trungthanh01/Project-learning">Create Personal CV</a></td>
+                        <td>Create Personal CV by using HTML structure</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/trungthanh01/Basic-HTML-Website">Basic HTML Website</a></td>
+                        <td>A simple HTML website project to practice basic HTML skills</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/trungthanh01/Personal-Portfolio">Personal Portfolio</a></td>
+                        <td>Use the Basic HTML Website to CSS and make it fit with many screen size.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/trungthanh01/Personal-Portfolio-2">Personal Portfolio-2</a></td>
+                        <td>I do it for my official website.</td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
 
+        <!-- blog -->
+         <div id="blog" class="blog__content">
+            <h1 class="blog__title">Have you ever think about Present </h1>
+            <p class="blog__text">
+                The present is a gift, a fleeting moment that holds the key to our existence. It is the space where we breathe, feel, and connect with the world around us. In the hustle and bustle of life, we often forget to pause and appreciate the beauty of now. 
+                Embracing the present allows us to savor life's simple joys, from the warmth of a smile to the sound of laughter. It is in these moments that we find clarity, purpose, and a deeper understanding of ourselves and others.
+                <br>// ======= End of Blog ======= //
+            </p>
+            <div class="author">
+                 <time datetime="date">June-2025</time>
+                <address>Ho Chi Minh, Viet Nam</address>
+                Author: Marcus
+            </div>
+            <!-- =======  others blog ======= -->
+            <div class="other__blogs">
+                <h2>Other Blog Posts</h2>
+                <table class="blog__toc">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Blog Title</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>The Power of Consistency</td>
+                            <td><a href="blog/blog__1.html">Read</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Learning from Failure</td>
+                            <td><a href="blog/blog__2.html">Read</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Why Curiosity Matters</td>
+                            <td><a href="blog/blog__3.html">Read</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Building Good Habits</td>
+                            <td><a href="blog/blog__4.html">Read</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Staying Motivated</td>
+                            <td><a href="blog/blog__5.html">Read</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Embracing Change</td>
+                            <td><a href="blog/blog__6.html">Read</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Finding Your Passion</td>
+                            <td><a href="blog/blog__7.html">Read</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div> 
 
     </main>
-    <div class="contact">
+    <div id="connect" class="contact">
         <ul>
             <li>
                 <a href="https://x.com/marcusleovn" 
@@ -150,6 +271,25 @@
       path: 'package/Animation - 1748913700547 (1).json'
     });
   });
+  document.addEventListener("DOMContentLoaded", function() {
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-work'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'package/Animation - 1748783084686.json'
+    });
+  });
+  document.addEventListener("DOMContentLoaded", function() {
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-edu'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'package/Animation - edu.json'
+    });
+  });
+  
 </script>
 </body>
 </html>
