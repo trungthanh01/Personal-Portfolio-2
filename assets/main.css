@@ -171,7 +171,7 @@ header {
   }
   .banner__menu__lists {
     display: flex;
-    gap: 2rem;
+    gap: 0.2rem;
     
   }
   .banner__menu__buttons {
@@ -189,12 +189,10 @@ header {
     margin: 0;
     line-height: 1;
   }
-  .banner__menu__lists {
-    gap: 1.2rem;
-  }
+  
   .banner__menu__lists a {
     font-size: 1rem;
-    padding: 0.3rem 0.7rem;
+    padding: 5px 5px;
   }
 }
 
