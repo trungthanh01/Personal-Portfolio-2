@@ -2,8 +2,8 @@
     --bg-dark: #1F2937;
     --text-dark: #FFFFFF;
     --container-dark: #111827;
-    --highlight-dark: #4ADF86;
-    --button-dark: #10B981;
+    --highlight-dark: #2aebee;
+    --button-dark: #2aebee;
     --divider-dark: #2F3E53;
     --password-bg-dark: #273549;
 
@@ -91,10 +91,10 @@ body {
 /* --- Main Container & Content --- */
 .container {
     width: 90%;
-    max-width: 450px;
-    padding: 40px 30px;
+    max-width: 300px;
+    padding: 30px 30px;
     border-radius: 12px;
-    transition: background-color 0.3s;
+    transition: background-color 0.1s;
     /* Thêm dòng này để căn giữa nội dung nếu có chiều cao nhỏ */
     display: flex;
     flex-direction: column;
@@ -134,7 +134,8 @@ p {
 }
 
 #generate-btn:hover {
-    filter: brightness(110%);
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 55px rgba(28, 61, 250, 0.2);
 }
 
 hr {
@@ -170,7 +171,7 @@ hr {
 
 .password-display:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(28, 61, 250, 0.2);
+    box-shadow: 10px 10px 55px rgba(28, 61, 250, 0.2);
 }
 
 /* --- Theme Toggler --- */
