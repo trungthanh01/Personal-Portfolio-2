@@ -1,0 +1,270 @@
+:root {
+    --bg-dark: #1F2937;
+    --text-dark: #FFFFFF;
+    --container-dark: #111827;
+    --highlight-dark: #4ADF86;
+    --button-dark: #10B981;
+    --divider-dark: #2F3E53;
+    --password-bg-dark: #273549;
+
+    --bg-light: #00274e;
+    --text-light: #1F2937;
+    --container-light: #d5d5d5;
+    --highlight-light: #034a33;
+    --button-light: #034a33;
+    --divider-light: #D5D4D8;
+    --password-bg-light: #F3F4F6;
+    --shadow-light: rgba(0,0,0,0.05);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+    /* Thêm dòng này để đảm bảo body chiếm toàn bộ viewport */
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* --- Theme --- */
+.dark-theme {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.light-theme {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+.dark-theme .container {
+    background-color: var(--container-dark);
+}
+
+.light-theme .container {
+    background-color: var(--container-light);
+    box-shadow: 0 4px 6px var(--shadow-light);
+}
+
+.dark-theme .highlight {
+    color: var(--highlight-dark);
+}
+
+.light-theme .highlight {
+    color: var(--highlight-light);
+}
+
+.dark-theme #generate-btn {
+    background-color: var(--button-dark);
+    color: var(--text-dark);
+}
+
+.light-theme #generate-btn {
+    background-color: var(--button-light);
+    color: var(--text-dark);
+}
+
+.dark-theme hr {
+    border-color: var(--divider-dark);
+}
+
+.light-theme hr {
+    border-color: var(--divider-light);
+}
+
+.dark-theme .password-display {
+    background-color: var(--password-bg-dark);
+    color: var(--highlight-dark);
+}
+
+.light-theme .password-display {
+    background-color: var(--password-bg-light);
+    color: var(--highlight-light);
+}
+
+
+/* --- Main Container & Content --- */
+.container {
+    width: 90%;
+    max-width: 450px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    /* Thêm dòng này để căn giữa nội dung nếu có chiều cao nhỏ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    font-weight: 800;
+}
+
+p {
+    color: #D5D4D8;
+    margin-bottom: 30px;
+}
+
+.light-theme p {
+    color: #6B7280;
+}
+
+
+#generate-btn {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#generate-btn:hover {
+    filter: brightness(110%);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid;
+    margin: 30px 0;
+}
+
+/* --- Password Outputs --- */
+.password-outputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.password-display {
+    width: calc(50% - 10px);
+    height: 45px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    padding: 0 60px;
+}
+
+.password-display:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(123, 14, 96, 0.2);
+}
+
+/* --- Theme Toggler --- */
+.theme-switcher-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-switcher {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-switcher input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--button-dark);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--button-dark);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* --- Notification --- */
+.notification {
+    visibility: hidden;
+    min-width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    font-size: 17px;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.notification.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .password-outputs {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .password-display {
+        width: 100%;
+    }
+}
