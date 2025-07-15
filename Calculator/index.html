@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Process-Output Examples</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <h1>📊 Input-Process-Output Examples</h1>
+    
+    <!-- Example 1: Simple Calculator -->
+    <div class="container">
+        <h2>🧮 1. Simple Calculator</h2>
+        <div class="example">
+            <div class="step input-step">
+                <strong>📥 INPUT:</strong>
+                <input type="number" id="num1" placeholder="Số thứ nhất">
+                <select id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">×</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="num2" placeholder="Số thứ hai">
+                <button onclick="calculate()">Tính toán</button>
+            </div>
+            <div class="step process-step">
+                <strong>⚙️ PROCESS:</strong> Thực hiện phép tính dựa trên toán tử được chọn
+            </div>
+            <div class="step output-step">
+                <strong>📤 OUTPUT:</strong>
+                <div id="calcResult" class="result">Kết quả sẽ hiển thị ở đây</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 2: Grade Calculator -->
+    <div class="container">
+        <h2>📝 2. Grade Calculator</h2>
+        <div class="example">
+            <div class="step input-step">
+                <strong>📥 INPUT:</strong>
+                <input type="number" id="score" placeholder="Điểm số (0-100)" min="0" max="100">
+                <button onclick="calculateGrade()">Tính xếp loại</button>
+            </div>
+            <div class="step process-step">
+                <strong>⚙️ PROCESS:</strong> Phân loại điểm theo thang điểm: A (90-100), B (80-89), C (70-79), D (60-69), F (<60)
+            </div>
+            <div class="step output-step">
+                <strong>📤 OUTPUT:</strong>
+                <div id="gradeResult" class="result">Xếp loại sẽ hiển thị ở đây</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 3: Age Calculator -->
+    <div class="container">
+        <h2>🎂 3. Age Calculator</h2>
+        <div class="example">
+            <div class="step input-step">
+                <strong>📥 INPUT:</strong>
+                <input type="date" id="birthDate">
+                <button onclick="calculateAge()">Tính tuổi</button>
+            </div>
+            <div class="step process-step">
+                <strong>⚙️ PROCESS:</strong> Tính toán tuổi dựa trên ngày sinh và ngày hiện tại
+            </div>
+            <div class="step output-step">
+                <strong>📤 OUTPUT:</strong>
+                <div id="ageResult" class="result">Tuổi sẽ hiển thị ở đây</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 4: BMI Calculator -->
+    <div class="container">
+        <h2>⚖️ 4. BMI Calculator</h2>
+        <div class="example">
+            <div class="step input-step">
+                <strong>📥 INPUT:</strong>
+                <input type="number" id="weight" placeholder="Cân nặng (kg)" step="0.1">
+                <input type="number" id="height" placeholder="Chiều cao (cm)" step="0.1">
+                <button onclick="calculateBMI()">Tính BMI</button>
+            </div>
+            <div class="step process-step">
+                <strong>⚙️ PROCESS:</strong> BMI = Cân nặng (kg) / (Chiều cao (m))²
+            </div>
+            <div class="step output-step">
+                <strong>📤 OUTPUT:</strong>
+                <div id="bmiResult" class="result">BMI và phân loại sẽ hiển thị ở đây</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 5: Temperature Converter -->
+    <div class="container">
+        <h2>🌡️ 5. Temperature Converter</h2>
+        <div class="example">
+            <div class="step input-step">
+                <strong>📥 INPUT:</strong>
+                <input type="number" id="temperature" placeholder="Nhiệt độ" step="0.1">
+                <select id="fromUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <span> chuyển sang </span>
+                <select id="toUnit">
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <button onclick="convertTemperature()">Chuyển đổi</button>
+            </div>
+            <div class="step process-step">
+                <strong>⚙️ PROCESS:</strong> Sử dụng công thức chuyển đổi nhiệt độ giữa các đơn vị
+            </div>
+            <div class="step output-step">
+                <strong>📤 OUTPUT:</strong>
+                <div id="tempResult" class="result">Kết quả chuyển đổi sẽ hiển thị ở đây</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 6: Password Generator -->
+    <div class="container">
+        <h2>🔐 6. Password Generator</h2>
+        <div class="example">
+            <div class="step input-step">
+                <strong>📥 INPUT:</strong>
+                <input type="number" id="passwordLength" placeholder="Độ dài mật khẩu" min="4" max="50" value="12">
+                <label><input type="checkbox" id="includeUppercase" checked> Chữ hoa</label>
+                <label><input type="checkbox" id="includeLowercase" checked> Chữ thường</label>
+                <label><input type="checkbox" id="includeNumbers" checked> Số</label>
+                <label><input type="checkbox" id="includeSymbols"> Ký tự đặc biệt</label>
+                <button onclick="generatePassword()">Tạo mật khẩu</button>
+            </div>
+            <div class="step process-step">
+                <strong>⚙️ PROCESS:</strong> Tạo mật khẩu ngẫu nhiên dựa trên các tiêu chí được chọn
+            </div>
+            <div class="step output-step">
+                <strong>📤 OUTPUT:</strong>
+                <div id="passwordResult" class="result">Mật khẩu sẽ được tạo ở đây</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
