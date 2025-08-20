@@ -1,0 +1,27 @@
+{
+  "name": "Marcus - Frontend Developer Portfolio",
+  "short_name": "Marcus Portfolio",
+  "description": "Marcus is a passionate frontend developer, guest experience expert, and cryptocurrency enthusiast. Explore his portfolio, projects, and journey in web development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/image.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/image.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}

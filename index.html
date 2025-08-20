@@ -3,18 +3,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Marcus</title>
-    <meta name="description" content="Marcus">
-    <meta name="keywords" content="Frontend Developer, Cryptocurrency, HTML, CSS, JavaScript">
+    <title>Marcus - Frontend Developer & Guest Experience Expert | Personal Portfolio</title>
+    <meta name="description" content="Marcus is a passionate frontend developer, guest experience expert, and cryptocurrency enthusiast. Explore his portfolio, projects, and journey in web development.">
+    <meta name="keywords" content="Frontend Developer, Cryptocurrency, HTML, CSS, JavaScript, Web Designer, Guest Experience Expert, Marcus, Portfolio, Web Development">
     <meta name="author" content="Marcus">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Marcus - Frontend Developer & Guest Experience Expert">
+    <meta property="og:description" content="Marcus is a passionate frontend developer, guest experience expert, and cryptocurrency enthusiast. Explore his portfolio, projects, and journey in web development.">
+    <meta property="og:image" content="https://yourdomain.com/img/image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="Marcus - Frontend Developer & Guest Experience Expert">
+    <meta property="twitter:description" content="Marcus is a passionate frontend developer, guest experience expert, and cryptocurrency enthusiast. Explore his portfolio, projects, and journey in web development.">
+    <meta property="twitter:image" content="https://yourdomain.com/img/image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/main.css">
-    <head>
-  <!-- ...existing code... -->
-  <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+    <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
 </head>
     
 
@@ -26,7 +49,7 @@
         <!-- phần banner bao gồm logo, menu, menu buttons -->
         <div class="banner">
             <span class="banner__logo">Marcus</span>
-            <nav class="banner__menu">
+            <nav class="banner__menu" aria-label="Main navigation">
                 <!-- banner__menu__lists -->
                 <ul class="banner__menu__lists">
                         <li class="banner__menu__list">
@@ -58,7 +81,7 @@
 
     <main>
 
-        <div id="hero" class="hero">
+        <section id="hero" class="hero">
             <div id="lottie-hero" class="hero__animation"></div>
             <div class="hero__content">
                 <h1 class="hero__main">Hi there, I'm Marcus</h1>
@@ -73,10 +96,10 @@
                 
                 </ul>
             </div>
-        </div>
+        </section>
 
        <!-- about -->
-        <div id="about" class="about">
+        <section id="about" class="about">
             <h2 class="about__me">About Me</h2>
             <p>Hi, I'm Marcus, a passionate frontend developer with a love for creating beautiful and functional web applications.
             Beside that, I have a keen interest in cryptocurrency, AI and reading book. I enjoy exploring new technologies and continuously improving my skills.
@@ -91,9 +114,9 @@
             I have been asking myself that question for a long time. But I know one thing for sure: <q>I want to live my life to the fullest.</q> 
             Just keep going bro!!
             </p>
-        </div>
+        </section>
         <!-- work experience -->
-       <div id="work">
+       <section id="work">
             <div class="work_edu">
 
                 <div class="work__experience">
@@ -103,14 +126,14 @@
                         <article class="work__experience__item">
                             <h3>1. roadmap.sh</h3>
                             <p>I'm currenly solving projects on Roadmap.sh</p>
-                            <a href="https://roadmap.sh/u/marcusvn" target="_blank">Visit my roadmap.sh profile</a>
-                            <a href="https://github.com/trungthanh01" target="_blank">Visit my github</a>
+                            <a href="https://roadmap.sh/u/marcusvn" target="_blank" rel="noopener noreferrer">Visit my roadmap.sh profile</a>
+                            <a href="https://github.com/trungthanh01" target="_blank" rel="noopener noreferrer">Visit my github</a>
                         </article>
 
                         <article class="work__experience__item">
                             <h3>2. Guest Experience Expert</h3>
                             <p>I'm working as a Guest Experience Expert in Renaissance Hotel.</p>
-                            <a href="https://www.linkedin.com/in/trung-th%C3%A0nh-l%C3%AA-8460bb35b/" target="_blank">Visit my linkedin</a>
+                            <a href="https://www.linkedin.com/in/trung-th%C3%A0nh-l%C3%AA-8460bb35b/" target="_blank" rel="noopener noreferrer">Visit my linkedin</a>
                         </article>
                     </div>
                     <div id="lottie-work" class="work-animation"></div>
@@ -121,7 +144,7 @@
                     <div class="education__items">
                         <h2 class="education__title">Education</h2>
                         <article class="education__item">
-                        <h3><a href="https://huflit.edu.vn/" target="_blank">Hochiminh University of Foreign Languages Information Technology (HUFLIT)</a></h3>
+                        <h3><a href="https://huflit.edu.vn/" target="_blank" rel="noopener noreferrer">Hochiminh University of Foreign Languages Information Technology (HUFLIT)</a></h3>
                         <p>I graduated from Hotel and Restaurant Management.</p>
                         </article>
                     </div>
@@ -130,61 +153,61 @@
 
                 </div>
             </div>
-        </div>
-        <div id="tools">
+        </section>
+        <section id="tools">
             <h2>Useful Tools</h2>
-            <P>I made this project to understand "Input - Process - Output"</P>
+            <p>I made this project to understand "Input - Process - Output"</p>
             <ol>
                 <li>
-                    <a href="Calculator/index.html" target="_blank">
+                    <a href="Calculator/index.html" target="_blank" rel="noopener noreferrer">
                         Calculator
                         <i class="fa-solid fa-arrow-up-right-from-square" aria-label="Open in new tab" style="font-size: 70%;"></i>
                     </a>
                 </li>
             </ol>
-            <P>This is all about the Cat mood </P>
+            <p>This is all about the Cat mood </p>
             <ol>
                 <li>
-                    <a href="Cat Gif/index.html" target="_blank">
+                    <a href="Cat Gif/index.html" target="_blank" rel="noopener noreferrer">
                         Cat Mood
                         <i class="fa-solid fa-arrow-up-right-from-square" aria-label="Open in new tab" style="font-size: 70%;"></i>
                     </a>
                 </li>
             </ol>
-        </div>
+        </section>
         <!-- project -->
-        <div id="project" class="projects">
+        <section id="project" class="projects">
             <h1>My projects are below</h1>
             <p>Here are some of the projects I have worked on. <br>
                 You can click on the project names to view them on GitHub.</p>
             <table class="projects__table">
                 <thead>
                     <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
+                        <th scope="col">Project Name</th>
+                        <th scope="col">Description</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="https://github.com/trungthanh01/Scrimba-projects" target="_blank">Scrimba Projects (course)</a></td>
+                        <td><a href="https://github.com/trungthanh01/Scrimba-projects" target="_blank" rel="noopener noreferrer">Scrimba Projects (course)</a></td>
                         <td>Create Personal CV by using HTML structure</td>
                     </tr>
 
                     <tr>
-                        <td><a href="https://github.com/trungthanh01/Roadmap-projects" target="_blank">Roadmap-projects</a></td>
+                        <td><a href="https://github.com/trungthanh01/Roadmap-projects" target="_blank" rel="noopener noreferrer">Roadmap-projects</a></td>
                         <td>A simple HTML website project to practice basic HTML skills</td>
                     </tr>
                     
                     <tr>
-                        <td><a href="https://github.com/trungthanh01/Personal-Portfolio-2" target="_blank">Personal Portfolio-2</a></td>
+                        <td><a href="https://github.com/trungthanh01/Personal-Portfolio-2" target="_blank" rel="noopener noreferrer">Personal Portfolio-2</a></td>
                         <td>I do it for my official website.</td>
                     </tr>
                 </tbody>
             </table>
-         </div>
+         </section>
 
         <!-- blog -->
-         <div id="blog" class="blog__content">
+         <section id="blog" class="blog__content">
             <h1 class="blog__title">Have you ever think about Present </h1>
             <p class="blog__text">
                 The present is a gift, a fleeting moment that holds the key to our existence. It is the space where we breathe, feel, and connect with the world around us. In the hustle and bustle of life, we often forget to pause and appreciate the beauty of now. 
@@ -192,19 +215,19 @@
                 <br>// ======= End of Blog ======= //
             </p>
             <div class="author">
-                 <time datetime="date">June-2025</time>
+                 <time datetime="2025-06-02">June-2025</time>
                 <address>Ho Chi Minh, Viet Nam</address>
                 Author: Marcus
             </div>
             <!-- =======  others blog ======= -->
-            <div class="other__blogs">
+            <nav class="other__blogs" aria-label="Other blog posts">
                 <h2>Other Blog Posts</h2>
                 <table class="blog__toc">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Blog Title</th>
-                            <th>Link</th>
+                            <th scope="col">#</th>
+                            <th scope="col">Blog Title</th>
+                            <th scope="col">Link</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -243,19 +266,25 @@
                             <td>Finding Your Passion</td>
                             <td><a href="blog/blog__7.html">Read</a></td>
                         </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Have Fun</td>
+                            <td><a href="blog/blog__8.html">Read</a></td>
+                        </tr>
                     </tbody>
                 </table>
-            </div>
+            </nav>
 
 
-        </div> 
+        </section> 
 
     </main>
-    <div id="connect" class="contact">
+    <section id="connect" class="contact">
         <ul>
             <li>
                 <a href="https://x.com/marcusleovn" 
                 target="_blank" 
+                rel="noopener noreferrer"
                 aria-label="X (formerly Twitter)">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
@@ -263,6 +292,7 @@
             <li>
                 <a href="https://github.com/trungthanh01" 
                 target="_blank" 
+                rel="noopener noreferrer"
                 aria-label="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
@@ -270,12 +300,13 @@
             <li>
                 <a href="https://www.linkedin.com/in/trung-th%C3%A0nh-l%C3%AA-8460bb35b/" 
                 target="_blank" 
+                rel="noopener noreferrer"
                 aria-label="LinkedIn">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </li>
         </ul>
-    </div>
+    </section>
     <footer>
         <p>&copy; This website is human made</p>
     </footer>
