@@ -36,312 +36,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
 </head>
     
 
 <body>
-    
-    <section id="overlay"></section>
-    <!-- header -->
-    <header>
-        <!-- phần banner bao gồm logo, menu, menu buttons -->
-        <div class="banner">
-            <span class="banner__logo">Marcus</span>
-            <nav class="banner__menu" aria-label="Main navigation">
-                <!-- banner__menu__lists -->
-                <ul class="banner__menu__lists">
-                        <li class="banner__menu__list">
-                            <a href="#hero">Home</a></li>
-                        <li class="banner__menu__list">
-                            <a href="#about">About</a></li>
-                        <li class="banner__menu__list">
-                            <a href="#work">Work</a></li>
-                        <li class="banner__menu__list">
-                            <a href="#project">Project</a></li>
-                        <li class="banner__menu__list">
-                            <a href="#blog">Blog</a></li>
-                        <li class="banner__menu__list">
-                            <a href="#connect">Connect</a></li>
-                        <li class="banner__menu__list">
-                            <a href="#tools">Useful Tools</a></li>
-
+    <!-- ... existing header ... -->
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">About</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="blog.html" class="header__nav-link">Blog</a>
+                    </li>
                 </ul>
             </nav>
-            <!-- menu button -->
-            <div class="banner__menu__buttons">
-                <div class="banner__menu__button"></div>
-            </div>
-            
-
         </div>
-        
     </header>
-
-    <main>
-
-        <section id="hero" class="hero">
-            <div id="lottie-hero" class="hero__animation"></div>
-            <div class="hero__content">
-                <h1 class="hero__main">Hi there, I'm Marcus</h1>
-                <h2 class="hero__sub">Guest Experience Expert, Investor and Seeker Knowledge(SK). <br>
-                    I'm on the way to become a Web Designer</h2>
-                <ul class="hero__mail">
-                    <a href="mailto:trungthanh.marcus@gmail.com" 
-                target="_blank" 
-                aria-label="mailto">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                
+    <main class="container">
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">Marcus</h1>
+                <p class="hero__description">I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites. I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                    I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                    I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+            </div>
+        </section>
+        <section class="projects">
+            <div class="projects__container">
+                <h2 class="projects__title">Projects</h2>
+                <p class="projects__description">I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites. I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                    I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                    I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                    <ul class="projects__list">
+                        <li class="projects__item">
+                            <a href="https://github.com/yourusername/project1" class="projects__link">Project 1</a>
+                            <p class="project-description">I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites. I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                                I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                                I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                            </p>
+                        </li>
+                        <li class="projects__item">
+                            <a href="https://github.com/yourusername/project2" class="projects__link">Project 2</a>
+                            <p class="project-description">I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites. I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                                I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                                I'm a frontend developer and guest experience expert. I love to create beautiful and functional websites.
+                            </p>
+                        </li>
+                    </ul>
+            </div>
+        <section class="contact">
+            <div class="contact__container">
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <a href="mailto:hello@marcus.com" class="contact__link">
+                            <i class="contact__icon">Medium</i>
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="mailto:hello@marcus.com" class="contact__link">
+                            <i class="contact__icon">Linkedin</i>
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="mailto:hello@marcus.com" class="contact__link">
+                            <i class="contact__icon">X</i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
-
-       <!-- about -->
-        <section id="about" class="about">
-            <h2 class="about__me">About Me</h2>
-            <p>Hi, I'm Marcus, a passionate frontend developer with a love for creating beautiful and functional web applications.
-            Beside that, I have a keen interest in cryptocurrency, AI and reading book. I enjoy exploring new technologies and continuously improving my skills.
-            Some of my favorite topics:
-            Frontend, Build In Public, Indie Hacker, Blockchain, Chainlink, Worldcoin, History. <br>
-            Well I started In Hospitality and have been working as a Guest Experience Expert, where I focused on enhancing customer satisfaction and ensuring a seamless user experience.
-            But It was not my passion, I chose Hospitality because I had no idea what I should learn.
-            I didn't know my hobby and I got stucked in someone's decision. So I decided to split some hours/day change my path and become a Web Designer. 
-            I have set my roadmap to become an Indie Hacker that I can create my own products and services. 
-            I know that a long-term goal requires short-term goals, so I am currently focusing on learning the basics of web development and building my portfolio by HTML, CSS and JavaScript. <br>
-            I am excited to share my journey with you and hope to inspire others to pursue their passions and dreams. And yessss, It is fucking hard. The question is "Do you actually living your life or just existing?" 
-            I have been asking myself that question for a long time. But I know one thing for sure: <q>I want to live my life to the fullest.</q> 
-            Just keep going bro!!
-            </p>
-        </section>
-        <!-- work experience -->
-       <section id="work">
-            <div class="work_edu">
-
-                <div class="work__experience">
-                    
-                    <div class="work__experience__items">
-                        <h2 class="work__experience__title">Work Experience</h2>
-                        <article class="work__experience__item">
-                            <h3>1. roadmap.sh</h3>
-                            <p>I'm currenly solving projects on Roadmap.sh</p>
-                            <a href="https://roadmap.sh/u/marcusvn" target="_blank" rel="noopener noreferrer">Visit my roadmap.sh profile</a>
-                            <a href="https://github.com/trungthanh01" target="_blank" rel="noopener noreferrer">Visit my github</a>
-                        </article>
-
-                        <article class="work__experience__item">
-                            <h3>2. Guest Experience Expert</h3>
-                            <p>I'm working as a Guest Experience Expert in Renaissance Hotel.</p>
-                            <a href="https://www.linkedin.com/in/trung-th%C3%A0nh-l%C3%AA-8460bb35b/" target="_blank" rel="noopener noreferrer">Visit my linkedin</a>
-                        </article>
-                    </div>
-                    <div id="lottie-work" class="work-animation"></div>
-                </div>
-
-                <div class="education">
-                    
-                    <div class="education__items">
-                        <h2 class="education__title">Education</h2>
-                        <article class="education__item">
-                        <h3><a href="https://huflit.edu.vn/" target="_blank" rel="noopener noreferrer">Hochiminh University of Foreign Languages Information Technology (HUFLIT)</a></h3>
-                        <p>I graduated from Hotel and Restaurant Management.</p>
-                        </article>
-                    </div>
-
-                    <div id="lottie-edu" class="edu-animation"></div>
-
-                </div>
-            </div>
-        </section>
-        <section id="tools">
-            <h2>Useful Tools</h2>
-            <p>I made this project to understand "Input - Process - Output"</p>
-            <ol>
-                <li>
-                    <a href="Calculator/index.html" target="_blank" rel="noopener noreferrer">
-                        Calculator
-                        <i class="fa-solid fa-arrow-up-right-from-square" aria-label="Open in new tab" style="font-size: 70%;"></i>
-                    </a>
-                </li>
-            </ol>
-            <p>This is all about the Cat mood </p>
-            <ol>
-                <li>
-                    <a href="Cat Gif/index.html" target="_blank" rel="noopener noreferrer">
-                        Cat Mood
-                        <i class="fa-solid fa-arrow-up-right-from-square" aria-label="Open in new tab" style="font-size: 70%;"></i>
-                    </a>
-                </li>
-            </ol>
-        </section>
-        <!-- project -->
-        <section id="project" class="projects">
-            <h1>My projects are below</h1>
-            <p>Here are some of the projects I have worked on. <br>
-                You can click on the project names to view them on GitHub.</p>
-            <table class="projects__table">
-                <thead>
-                    <tr>
-                        <th scope="col">Project Name</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://github.com/trungthanh01/Scrimba-projects" target="_blank" rel="noopener noreferrer">Scrimba Projects (course)</a></td>
-                        <td>Create Personal CV by using HTML structure</td>
-                    </tr>
-
-                    <tr>
-                        <td><a href="https://github.com/trungthanh01/Roadmap-projects" target="_blank" rel="noopener noreferrer">Roadmap-projects</a></td>
-                        <td>A simple HTML website project to practice basic HTML skills</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><a href="https://github.com/trungthanh01/Personal-Portfolio-2" target="_blank" rel="noopener noreferrer">Personal Portfolio-2</a></td>
-                        <td>I do it for my official website.</td>
-                    </tr>
-                </tbody>
-            </table>
-         </section>
-
-        <!-- blog -->
-         <section id="blog" class="blog__content">
-            <h1 class="blog__title">Have you ever think about Present </h1>
-            <p class="blog__text">
-                The present is a gift, a fleeting moment that holds the key to our existence. It is the space where we breathe, feel, and connect with the world around us. In the hustle and bustle of life, we often forget to pause and appreciate the beauty of now. 
-                Embracing the present allows us to savor life's simple joys, from the warmth of a smile to the sound of laughter. It is in these moments that we find clarity, purpose, and a deeper understanding of ourselves and others.
-                <br>// ======= End of Blog ======= //
-            </p>
-            <div class="author">
-                 <time datetime="2025-06-02">June-2025</time>
-                <address>Ho Chi Minh, Viet Nam</address>
-                Author: Marcus
-            </div>
-            <!-- =======  others blog ======= -->
-            <nav class="other__blogs" aria-label="Other blog posts">
-                <h2>Other Blog Posts</h2>
-                <table class="blog__toc">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Blog Title</th>
-                            <th scope="col">Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>The Power of Consistency</td>
-                            <td><a href="blog/blog__1.html">Read</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Learning from Failure</td>
-                            <td><a href="blog/blog__2.html">Read</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Why Curiosity Matters</td>
-                            <td><a href="blog/blog__3.html">Read</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Building Good Habits</td>
-                            <td><a href="blog/blog__4.html">Read</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Staying Motivated</td>
-                            <td><a href="blog/blog__5.html">Read</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Embracing Change</td>
-                            <td><a href="blog/blog__6.html">Read</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Finding Your Passion</td>
-                            <td><a href="blog/blog__7.html">Read</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Have Fun</td>
-                            <td><a href="blog/blog__8.html">Read</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </nav>
-
-
-        </section> 
-
     </main>
-    <section id="connect" class="contact">
-        <ul>
-            <li>
-                <a href="https://x.com/marcusleovn" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="X (formerly Twitter)">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/trungthanh01" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/trung-th%C3%A0nh-l%C3%AA-8460bb35b/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; This website is human made</p>
-    </footer>
- <script src="js/main.js"></script>
- <script src="https://kit.fontawesome.com/1d4daf29d4.js" crossorigin="anonymous"></script>
- <script>
-    // lottie-hero
-  document.addEventListener("DOMContentLoaded", function() {
-    lottie.loadAnimation({
-      container: document.getElementById('lottie-hero'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'package/Animation - 1748913700547 (1).json'
-    });
-  });
-  document.addEventListener("DOMContentLoaded", function() {
-    lottie.loadAnimation({
-      container: document.getElementById('lottie-work'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'package/Animation - 1748783084686.json'
-    });
-  });
-  document.addEventListener("DOMContentLoaded", function() {
-    lottie.loadAnimation({
-      container: document.getElementById('lottie-edu'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'package/Animation - edu.json'
-    });
-  });
-  
-</script>
+     <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">© 2025 Marcus. There is a Shit on your chair.</p>
+        </div>
+     </footer>
 </body>
 </html>

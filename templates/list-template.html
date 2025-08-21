@@ -1,0 +1,47 @@
+<!-- Template cho blog list -->
+<template id="list-template">
+  <div class="blog-list">
+    <header class="blog-list-header">
+      <h1>Blog Posts</h1>
+      <div class="blog-search">
+        <input type="text" id="search-input" placeholder="Search posts..." />
+        <button id="search-btn">Search</button>
+      </div>
+    </header>
+    
+    <div class="blog-categories-filter">
+      <button class="category-filter active" data-category="all">All</button>
+      <!-- Categories sẽ được render động -->
+    </div>
+    
+    <div class="blog-posts-container">
+      <!-- Posts sẽ được render động ở đây -->
+    </div>
+    
+    <div class="blog-pagination">
+      <button id="prev-page" class="pagination-btn">← Previous</button>
+      <span id="page-info">Page 1 of 1</span>
+      <button id="next-page" class="pagination-btn">Next →</button>
+    </div>
+  </div>
+</template>
+
+<!-- Template cho từng blog post preview -->
+<template id="post-preview-template">
+  <article class="blog-preview" data-post-id="{{id}}">
+    <div class="preview-content">
+      <h2 class="preview-title">
+        <a href="#" data-post-slug="{{slug}}">{{title}}</a>
+      </h2>
+      <p class="preview-excerpt">{{excerpt}}</p>
+      <div class="preview-meta">
+        <time datetime="{{date}}">{{formattedDate}}</time>
+        <span class="read-time">{{readTime}}</span>
+        <span class="author">{{author}}</span>
+      </div>
+      <div class="preview-categories">
+        <!-- Categories sẽ được render động -->
+      </div>
+    </div>
+  </article>
+</template>
