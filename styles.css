@@ -2,13 +2,17 @@
     --primary-color: #000957;
     --secondary-color: #FFF7D1;
     --third-color: #00FFDE;
-    --text-color: #393E46;
+    --text-color: #A27B5C;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--third-color);
 }
 li {
     list-style: none;
 }
 a {
     text-decoration: none;
+    color: var(--third-color);
 }
 p {
     color: var(--text-color);
@@ -29,16 +33,14 @@ body {
 
 header {
     border: 5px solid var(--third-color);
-    background-color: var(--secondary-color);
+    background-color: black;
     margin: 20px auto;
-}
-.container {
-    border: 5px solid var(--primary-color);
 }
 
 footer {
     border: 5px solid var(--third-color);
     margin: 20px auto;
+    background-color: black;
 }
 
 .header__container {
@@ -55,9 +57,10 @@ footer {
 .header__nav-item a{
     margin:10px;
     text-align: left;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--secondary-color);
     padding: 10px;
     border-radius: 10px;
+    color: var(--text-color);
 
 }
 .header__nav-item a:hover {
@@ -71,7 +74,8 @@ footer {
 }
 
 .container {
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--third-color);
+    background-color: black;
 }
 .hero__container {
     margin: 0 20px;
@@ -82,9 +86,27 @@ footer {
 .contact__container {
     margin: 0 20px;
 }
+.contact__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 ;
+    margin: 0 auto;
+}
+
 .footer__container {
     margin: 0 20px;
 }
+.footer__text {
+    text-align: center;
+    color: var(--third-color);
+}
+
+
+
+
+
+
 
 /* Blog Styles */
 .blog-list {
@@ -101,7 +123,7 @@ footer {
 .blog-list-header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: var(--third-color);
 }
 
 .blog-search {
@@ -113,7 +135,8 @@ footer {
 
 .blog-search input {
     padding: 0.75rem 1rem;
-    border: 2px solid #e5e7eb;
+    border: 4px solid var(--secondary-color);
+    background-color: black;
     border-radius: 0.5rem;
     font-size: 1rem;
     min-width: 300px;
@@ -121,9 +144,9 @@ footer {
 
 .blog-search button {
     padding: 0.75rem 1.5rem;
-    background: #6366f1;
-    color: white;
-    border: none;
+    background: black;
+    color: var(--text-color);
+    border: 4px solid var(--secondary-color);
     border-radius: 0.5rem;
     cursor: pointer;
     font-weight: 600;
