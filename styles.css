@@ -45,7 +45,7 @@ p {
     color: var(--text-color);
 }
 
-body {  
+body {
     background-color: var(--third-color);
     color: var(--text-color);
     margin: 0 auto;
@@ -203,13 +203,6 @@ header, footer {
     cursor: pointer;
     transition: var(--transition-fast);
     font-weight: 500;
-}
-
-/* Trạng thái mặc định */
-.category-filter {
-    background: white;
-    color: var(--text-color);
-    border-color: var(--text-color);
 }
 
 /* Trạng thái hover */
