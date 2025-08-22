@@ -18,8 +18,8 @@ p {
     color: var(--text-color);
 }
 
-body {
-    background-color: var(--secondary-color);
+body {  
+    background-color: var(--third-color);
     color: var(--text-color);
     margin: 0 auto;
     padding: 0;
@@ -32,13 +32,13 @@ body {
 }
 
 header {
-    border: 5px solid var(--third-color);
+    border: 5px solid var(--text-color);
     background-color: black;
     margin: 20px auto;
 }
 
 footer {
-    border: 5px solid var(--third-color);
+    border: 5px solid var(--text-color);
     margin: 20px auto;
     background-color: black;
 }
@@ -72,26 +72,24 @@ footer {
     text-decoration: none;
     color: var(--primary-color);
 }
+.hero__container, .hero__title, .hero__description {
+    text-align: center;
+}
+
 
 .container {
-    border: 5px solid var(--third-color);
+    border: 5px solid var(--text-color);
     background-color: black;
 }
-.hero__container {
+.about__container, .projects__container, .contact__container {
     margin: 0 20px;
 }
-.projects__container {
-    margin: 0 20px;
-}
-.contact__container {
-    margin: 0 20px;
-}
+
 .contact__list {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 ;
-    margin: 0 auto;
 }
 
 .footer__container {
