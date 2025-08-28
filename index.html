@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/time-location.css">
     <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
 </head>
     
@@ -63,6 +64,32 @@
         <div class="hero__container">
             <h1 class="hero__title">Hey my friends, be happy!</h1>
             <p class="hero__description">My name is Marcus - Le Trung Thanh. Come here and be my crew if you are building your own business</p>
+            
+            <!-- Thêm thông tin thời gian và địa điểm -->
+            <div class="hero__info">
+                <div class="hero__time-location">
+                    <div class="hero__time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span id="current-time">Loading...</span>
+                        <span id="current-date">Loading...</span>
+                    </div>
+                    <div class="hero__location">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <span id="current-location">Ho Chi Minh City, Vietnam</span>
+                        <span id="timezone">GMT+7</span>
+                    </div>
+                </div>
+                <div class="hero__status">
+                    <div class="hero__status-item">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Currently Learning: Web Development</span>
+                    </div>
+                    <div class="hero__status-item">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Working at: Renaissance Hotel</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="contact__container">
             <ul class="contact__list">
@@ -169,5 +196,7 @@
             <p class="footer__text">© 2025 Marcus. Hey Bro, Have Fun!.</p>
         </div>
      </footer>
+     
+     <script src="js/time-location.js"></script>
 </body>
 </html>

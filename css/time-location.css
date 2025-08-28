@@ -1,0 +1,304 @@
+/* ===== TIME & LOCATION STYLES ===== */
+/* File: css/time-location.css */
+
+/* ===== HERO INFO CONTAINER ===== */
+.hero__info {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: rgba(0, 0, 0, 0.3);
+    border: var(--border-thin);
+    border-color: var(--secondary-color);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(10px);
+}
+
+/* ===== TIME & LOCATION SECTION ===== */
+.hero__time-location {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+/* ===== TIME & LOCATION ITEMS ===== */
+.hero__time,
+.hero__location {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    min-width: 220px;
+    justify-content: center;
+    transition: var(--transition-normal);
+}
+
+.hero__time:hover,
+.hero__location:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+/* ===== ICONS ===== */
+.hero__time i,
+.hero__location i {
+    color: var(--third-color);
+    font-size: 1.3rem;
+    min-width: 20px;
+}
+
+/* ===== TEXT CONTENT ===== */
+.hero__time span,
+.hero__location span {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* ===== SPECIFIC ELEMENTS ===== */
+#current-time {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: var(--third-color) !important;
+    font-family: 'Jersey 10', monospace;
+    letter-spacing: 1px;
+}
+
+#current-date {
+    color: var(--fourth-color) !important;
+    font-weight: 600 !important;
+    text-transform: capitalize;
+}
+
+#current-location {
+    color: var(--secondary-color) !important;
+    font-weight: 600 !important;
+}
+
+#timezone {
+    color: var(--text-color) !important;
+    font-size: 0.8rem !important;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+/* ===== STATUS SECTION ===== */
+.hero__status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.hero__status-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(0, 255, 222, 0.1);
+    border: 1px solid var(--third-color);
+    border-radius: var(--radius-md);
+    min-width: 200px;
+    justify-content: center;
+    transition: var(--transition-normal);
+}
+
+.hero__status-item:hover {
+    background: rgba(0, 255, 222, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 222, 0.2);
+}
+
+.hero__status-item i {
+    color: var(--third-color);
+    font-size: 1.1rem;
+    min-width: 18px;
+}
+
+.hero__status-item span {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+    .hero__time-location {
+        gap: var(--spacing-sm);
+    }
+    
+    .hero__time,
+    .hero__location {
+        min-width: 200px;
+        padding: var(--spacing-sm);
+    }
+    
+    .hero__status-item {
+        min-width: 180px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .hero__info {
+        margin: var(--spacing-md) var(--spacing-sm);
+        padding: var(--spacing-sm);
+    }
+    
+    .hero__time-location {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: stretch;
+    }
+    
+    .hero__time,
+    .hero__location {
+        min-width: 100%;
+        justify-content: flex-start;
+        padding: var(--spacing-md);
+    }
+    
+    .hero__status {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: stretch;
+    }
+    
+    .hero__status-item {
+        min-width: 100%;
+        justify-content: flex-start;
+        padding: var(--spacing-md);
+    }
+    
+    /* Mobile optimizations */
+    .hero__time span,
+    .hero__location span,
+    .hero__status-item span {
+        font-size: 0.95rem;
+    }
+    
+    #current-time {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .hero__info {
+        margin: var(--spacing-sm);
+        padding: var(--spacing-sm);
+        border-radius: var(--radius-sm);
+    }
+    
+    .hero__time,
+    .hero__location,
+    .hero__status-item {
+        padding: var(--spacing-sm);
+        border-radius: var(--radius-sm);
+    }
+    
+    .hero__time i,
+    .hero__location i {
+        font-size: 1.1rem;
+        min-width: 16px;
+    }
+    
+    .hero__status-item i {
+        font-size: 1rem;
+        min-width: 16px;
+    }
+    
+    .hero__time span,
+    .hero__location span {
+        font-size: 0.85rem;
+    }
+    
+    .hero__status-item span {
+        font-size: 0.8rem;
+    }
+    
+    #current-time {
+        font-size: 1rem !important;
+        letter-spacing: 0.5px;
+    }
+    
+    #current-date {
+        font-size: 0.85rem !important;
+    }
+    
+    #timezone {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+    .hero__info {
+        margin: var(--spacing-xs);
+        padding: var(--spacing-xs);
+    }
+    
+    .hero__time,
+    .hero__location,
+    .hero__status-item {
+        padding: var(--spacing-xs);
+        gap: var(--spacing-xs);
+    }
+    
+    .hero__time span,
+    .hero__location span,
+    .hero__status-item span {
+        font-size: 0.8rem;
+    }
+    
+    #current-time {
+        font-size: 0.95rem !important;
+    }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero__info {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.hero__time,
+.hero__location,
+.hero__status-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.hero__time {
+    animation-delay: 0.1s;
+}
+
+.hero__location {
+    animation-delay: 0.2s;
+}
+
+.hero__status-item:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.hero__status-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
