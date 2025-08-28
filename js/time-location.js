@@ -27,7 +27,7 @@ class TimeLocationManager {
 
     updateTime() {
         const now = new Date();
-        const timeString = now.toLocaleTimeString('vi-VN', {
+        const timeString = now.toLocaleTimeString('en-US', {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
@@ -41,7 +41,7 @@ class TimeLocationManager {
 
     updateDate() {
         const now = new Date();
-        const dateString = now.toLocaleDateString('vi-VN', {
+        const dateString = now.toLocaleDateString('en-US', {
             weekday: 'long',
             year: 'numeric',
             month: 'long',

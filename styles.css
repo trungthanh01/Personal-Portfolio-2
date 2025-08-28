@@ -623,7 +623,9 @@ header, footer {
     .hero__time-location {
         flex-direction: column;
         gap: var(--spacing-sm);
-        align-items: stretch;
+        width: 85%;
+        align-items: center;
+
     }
     
     .hero__time,
@@ -636,7 +638,8 @@ header, footer {
     .hero__status {
         flex-direction: column;
         gap: var(--spacing-sm);
-        align-items: stretch;
+        align-items: center;
+        width: 85%;
     }
     
     .hero__status-item {
