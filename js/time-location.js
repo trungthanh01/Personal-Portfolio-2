@@ -79,45 +79,6 @@ class TimeLocationManager {
             this.locationElement.title = `Coordinates: ${locationInfo.coordinates}`;
         }
     }
-
-    // Phương thức để cập nhật địa điểm theo thời gian thực (nếu cần)
-    updateLocationRealTime() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                (position) => {
-                    const { latitude, longitude } = position.coords;
-                    console.log(`Current location: ${latitude}, ${longitude}`);
-                    // Có thể thêm logic để xác định thành phố từ coordinates
-                },
-                (error) => {
-                    console.log('Location access denied or error:', error.message);
-                }
-            );
-        }
-    }
-
-    // Phương thức để hiển thị thời gian theo múi giờ khác
-    showTimeInTimezone(timezone) {
-        const now = new Date();
-        const timeInZone = now.toLocaleTimeString('en-US', {
-            timeZone: timezone,
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            hour12: false
-        });
-        
-        return timeInZone;
-    }
-
-    // Phương thức để format thời gian đẹp hơn
-    formatTime(seconds) {
-        const hours = Math.floor(seconds / 3600);
-        const minutes = Math.floor((seconds % 3600) / 60);
-        const secs = seconds % 60;
-        
-        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-    }
 }
 
 // Khởi tạo khi trang load
